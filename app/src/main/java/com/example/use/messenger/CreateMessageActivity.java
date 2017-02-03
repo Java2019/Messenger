@@ -20,6 +20,7 @@ public class CreateMessageActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_SEND);
         intent.setType("text/plain");
         intent.putExtra(Intent.EXTRA_TEXT, messageText);
-        startActivity(intent);
+        Intent chosenIntent = Intent.createChooser(intent, "Send message...");
+        startActivity(chosenIntent);
     }
 }
