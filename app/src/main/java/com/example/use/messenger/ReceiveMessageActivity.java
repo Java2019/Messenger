@@ -5,6 +5,8 @@ import android.os.Bundle;
 
 public class ReceiveMessageActivity extends AppCompatActivity {
 
+    public static final String EXTRA_MESSAGE = "message";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
